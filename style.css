@@ -1,42 +1,41 @@
 header{
     overflow: hidden;
 }
+.slider{
+    width: 800px;
+    height: 500px;
+    margin: auto;
+    overflow: hidden;
+
+}
 header figure{
     position: relative;
-    width: 500%;
+    width: 600%;
     margin: 0%;
-    animation: 20s slider infinite;
+    animation: 10s slider infinite;
 }
-header figure img{
+.slider figure img{
     float: right;
-    width: 20%;
+    width: calc(100% / 6);/*100-at 6-tal osztjuk*/
 }
 @keyframes slider{
     0%{
         right: 0;
     }
     20%{
-        right: 0;
-    }
-    25%{
         right: 100%;
     }
-    45%{
-        right: 100%;
-    }
-    50%{
-        right:200%
-    }
-    70%{
-        right: 200%
-    }
-    75%{
+    40%{
         right: 200%;
     }
-    95%{
-        right: 300%;
+    60%{
+        right:300%
     }
+    80%{
+        right: 400%
+    }
+    
     100%{
-        right: 400%;
+        right: 500%;
     }
 }
